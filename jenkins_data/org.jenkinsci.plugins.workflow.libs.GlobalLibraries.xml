@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.libs.GlobalLibraries plugin="workflow-cps-global-lib@2.19">
+  <libraries>
+    <org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+      <name>cem-jenkins-lib</name>
+      <retriever class="org.jenkinsci.plugins.workflow.libs.SCMSourceRetriever">
+        <scm class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@2.9.9">
+          <id>ce0c9aec-ab26-44dd-b65d-e8922fffe76a</id>
+          <apiUri>https://api.github.com</apiUri>
+          <repoOwner>quincycheng</repoOwner>
+          <repository>cem-jenkins-lib</repository>
+          <repositoryUrl>https://github.com/quincycheng/cem-jenkins-lib.git</repositoryUrl>
+          <traits>
+            <org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
+              <strategyId>1</strategyId>
+            </org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
+            <org.jenkinsci.plugins.github__branch__source.OriginPullRequestDiscoveryTrait>
+              <strategyId>1</strategyId>
+            </org.jenkinsci.plugins.github__branch__source.OriginPullRequestDiscoveryTrait>
+            <org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait>
+              <strategyId>1</strategyId>
+              <trust class="org.jenkinsci.plugins.github_branch_source.ForkPullRequestDiscoveryTrait$TrustPermission"/>
+            </org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait>
+          </traits>
+        </scm>
+      </retriever>
+      <defaultVersion>main</defaultVersion>
+      <implicit>false</implicit>
+      <allowVersionOverride>true</allowVersionOverride>
+      <includeInChangesets>true</includeInChangesets>
+    </org.jenkinsci.plugins.workflow.libs.LibraryConfiguration>
+  </libraries>
+</org.jenkinsci.plugins.workflow.libs.GlobalLibraries>

@@ -1,0 +1,5 @@
+.git/
+.env
+logs
+*.log
+jenkins_data/.cache/
