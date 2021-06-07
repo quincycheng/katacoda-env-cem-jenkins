@@ -1,6 +1,6 @@
 # katacoda-env-cem-jenkins
 
-This the the environment for Katacode course
+This is the environment for Katacode course at https://katacoda.com/conjur/scenarios/cem-jenkins
 
 ## Unpack the files
 ```
