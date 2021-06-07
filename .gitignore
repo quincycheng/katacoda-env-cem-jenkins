@@ -2,4 +2,4 @@
 .env
 logs
 *.log
-jenkins_data/.cache/
+jenkins_data/
