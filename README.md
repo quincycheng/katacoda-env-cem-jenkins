@@ -17,6 +17,14 @@ docker-compose up -d
 
 ## Pack the files
 ```
-cd assets
-./package.sh
+# clean up
+rm assets/jenkins_data.tar.gz.parta*
+
+tar zcvf jenkins_data.tar.gz ./jenkins_data/
+split -b 23m jenkins_data.tar.gz jenkins_data.tar.gz.part
+mv jenkins_data.tar.gz.parta* ./assets/
+
+# clean up
+rm jenkins_data.tar.gz
+
 ```
